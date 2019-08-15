@@ -5,7 +5,13 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed;
-    background-size: cover; /* Resize the background image to cover the entire container */
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+
     font-family: 'Lato', sans-serif;
 
 }
