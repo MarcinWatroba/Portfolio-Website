@@ -1,0 +1,52 @@
+
+body {
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-color: rgb(240, 240, 240);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    font-family: 'Lato', sans-serif;
+
+}
+#mainNavbar { 
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+
+h1 {
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 3rem;
+}
+
+
+.portfolio-entry {
+    margin: 1em 0em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0) ,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.entry-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    color: white;
+}
+
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+hr {
+    margin: 0em;
+    border: 0;
+    height: 2px;
+
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+}
