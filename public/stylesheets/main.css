@@ -61,16 +61,10 @@ hr {
 
 
 
-@media (max-width: 500px) {
-    body {
-      background-image: url("https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
-      background-color: rgb(240, 240, 240);
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-attachment: fixed;
-      width: 100%;
-  
-      font-family: 'Lato', sans-serif;
+@media (max-width: 600px) {
+    .portfolio-entry {
+        margin: 1em 0em;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
     }
 }
   
