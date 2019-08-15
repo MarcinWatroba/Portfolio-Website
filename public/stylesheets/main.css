@@ -68,7 +68,7 @@ hr {
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-attachment: fixed;
-
+      width: 100%;
   
       font-family: 'Lato', sans-serif;
     }
