@@ -5,10 +5,16 @@ body {
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-attachment: fixed;
-
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 
     font-family: 'Lato', sans-serif;
+
+    
 
 }
 #mainNavbar { 
@@ -52,3 +58,24 @@ hr {
 
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
 }
+
+
+
+@media (max-width: 500px) {
+    body {
+      background-image: url("https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+      background-color: rgb(240, 240, 240);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-attachment: fixed;
+      
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+  
+      font-family: 'Lato', sans-serif;
+    }
+}
+  
