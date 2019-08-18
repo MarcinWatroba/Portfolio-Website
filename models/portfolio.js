@@ -7,7 +7,8 @@ const portfolioSchema = new mongoose.Schema({
     functionality: String,
     developedWith: [String],
     webLink: String,
-    gitLink: String
+    gitLink: String,
+    type: String
 });
 
 module.exports = mongoose.model("Portfolio", portfolioSchema);

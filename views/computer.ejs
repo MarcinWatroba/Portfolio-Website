@@ -1,8 +1,17 @@
 <% include partials/header %>
 
+<div class="row py-3 portfolio-entry text-center">
+    <hr>
+        <div class="col-12">
+        <h3 class="overlay-text">Computer Apps</h3>
+        <p class="overlay-text">My computer projects such as games, game engines, AI algorithms, simulators, etc. 
+            will be added here soon. Until then, please see my Github to view my projects.</p>
+            <a class="btn btn-info d-inline float-center mx-1" href="https://github.com/marcin388">Visit Github</a>
+        </div>
+    <hr>
+</div>
 
-
-<% entries.forEach(entry => { if(entry.type === "web") { %> 
+<% entries.forEach(entry => { if(entry.type === "computer") { %> 
     
     <div class="row py-3 portfolio-entry">
         <hr>
@@ -25,9 +34,7 @@
                     <% }) %>
                 </ul>
                 <% if(entry.webLink) { %>
-                <a class="btn btn-success d-inline float-right mx-1" href="<%= entry.webLink %>">Visit Website</a>
-                <% } else { %>
-                    <a class="btn btn-warning d-inline float-right mx-1" href="#">Coming Soon</a>
+                <a class="btn btn-success d-inline float-right mx-1" href="<%= entry.webLink %>">Download</a>
                 <% } %>
                 <a class="btn btn-info d-inline float-right mx-1" href="<%= entry.gitLink %>">Visit Github</a>
             </div>

@@ -11,3 +11,41 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
+
+<div class="container-fluid">
+<div id="title" class="d-flex justify-content-center my-4">
+    <h1>Web Portfolio by Marcin Watroba</h1>
+</div>
+
+<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <a class="navbar-brand" href="#">MW Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">WEB APPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/computer">COMPUTER APPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/marcin388/">GITHUB</a>
+        </li>       
+      </ul>
+      <% if(currUser) { %>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Signed In As <%= currUser.username %></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="/new">New Entry</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+        </ul>
+    <% } %>
+    </div>
+</nav>

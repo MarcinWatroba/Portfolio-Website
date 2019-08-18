@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+
+<div class="container container-login">
+    <div class="card transparent">
+    <h2 style="text-align: center;">Sign in to Your Account</h2>
+    <div style="width: 90%; margin: 25px auto;">
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <div class="form-group d-flex align-items-stretch">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Sign In</button>
+            </div>
+        </form>
+        <a href="/">Go Back</a>
+    </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
