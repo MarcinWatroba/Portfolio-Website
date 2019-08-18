@@ -6,7 +6,7 @@ const express    = require("express")
       LocalStrategy = require("passport-local"),
       Portfolio  = require("./models/portfolio"),
       User     = require("./models/user");
- //      seedDB     = require("./seed");
+       seedDB     = require("./seed");
 
 
 const url = process.env.PORTFOLIODB || "mongodb://localhost:27017/portfolio";
@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     next();
 });
 
- //seedDB();
+ seedDB();
 
  isLoggedIn = function(req, res, next) {
     if(req.isAuthenticated()){
