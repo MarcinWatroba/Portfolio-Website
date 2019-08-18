@@ -6,7 +6,6 @@ const express    = require("express")
       LocalStrategy = require("passport-local"),
       Portfolio  = require("./models/portfolio"),
       User     = require("./models/user");
-       seedDB     = require("./seed");
 
 
 const url = process.env.PORTFOLIODB || "mongodb://localhost:27017/portfolio";
@@ -33,8 +32,6 @@ app.use((req, res, next) => {
     res.locals.currUser = req.user;
     next();
 });
-
- seedDB();
 
  isLoggedIn = function(req, res, next) {
     if(req.isAuthenticated()){
@@ -64,22 +61,6 @@ app.post("/", isLoggedIn, (req, res) => {
                   return res.redirect("/");
                 })
               .catch(err => console.log(err));
-});
-
-//register form
-app.get("/register", (req, res) => res.render("register"));
-
-app.post("/register", (req, res) => {
-    const newUser = new User({username: req.body.username});
-    User.register(newUser, req.body.password)
-        .then(user => passport.authenticate("local")(req, res, () => {
-            return res.redirect("/");
-        }))
-        .catch(err => {
-            console.log(err);
-            return res.redirect("/register");
-        });
-
 });
 
 //login form
