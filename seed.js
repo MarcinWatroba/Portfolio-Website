@@ -14,7 +14,7 @@ var data = [
         },
         {
             title: "Colour Game", 
-            image: "/color.png",
+            image: "/color.jpg",
             description: "Colour Game is a front-end web application designed by Colt Steele for an Udemy course called \"The Web Developer Bootcamp\". Although design originates from the course, I have implemented it using a different approach, using my own jQuery code, and adding more functionalities, as well as improving device compatibility",
             functionality: "This is a simple front-end web app where the task is to guess a colour based on a randomly generated RGB code. Currently difficulty level can be set to easy/medium/hard, each having different amount of colours to pick from. If this project will be expanded in the future I might add countdown and scoring, possibly even highscore board.",
             developedWith: ["HTML5", "CSS3", "Bootstrap4", "JavaScript", "jQuery"],
