@@ -14,6 +14,19 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
 
 #mainNavbar { 
     background-color:rgba(0, 0, 0, 0.9);
@@ -54,10 +67,44 @@ h2 {
 }
 
 .entry-image {
+    transition: .5s ease;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
+
+.image-container:hover .entry-image{
+    filter: brightness(50%);
+}
+
+.image-container:hover .icon {
+    opacity: 1;
+}
+
+.icon {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3rem;
+}
+
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-width: 80%;
+    height: auto;
+} 
 
 .overlay-text {
     color: white;

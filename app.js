@@ -5,8 +5,8 @@ const express    = require("express")
       passport = require("passport"),
       LocalStrategy = require("passport-local"),
       Portfolio  = require("./models/portfolio"),
-      User     = require("./models/user"),
       seed     = require("./seed");
+      User     = require("./models/user");
 
 
 const url = process.env.PORTFOLIODB || "mongodb://localhost:27017/portfolio";
