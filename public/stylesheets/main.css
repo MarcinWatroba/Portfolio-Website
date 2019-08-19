@@ -1,9 +1,9 @@
 
-body {
+/* body {
     background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-color: rgb(240, 240, 240);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-attachment: fixed;
     
     -webkit-background-size: cover;
@@ -13,9 +13,30 @@ body {
     height: 100%;
 
     font-family: 'Lato', sans-serif;
+} */
 
-    
+body {
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
 
+body:after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #mainNavbar { 
@@ -66,11 +87,30 @@ h2 {
     color: white;
 }
 
+#web-info {
+    max-width: 800px;
+}
+
+#web-container {
+    margin:auto;
+    text-align: center;
+}
+
+#web-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+}
+
 ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+
 }
+
+
 
 hr {
     margin: 0em;
