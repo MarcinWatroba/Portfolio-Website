@@ -5,7 +5,8 @@ const express    = require("express")
       passport = require("passport"),
       LocalStrategy = require("passport-local"),
       Portfolio  = require("./models/portfolio"),
-      User     = require("./models/user");
+      User     = require("./models/user"),
+      seed     = require("./seed");
 
 
 const url = process.env.PORTFOLIODB || "mongodb://localhost:27017/portfolio";
@@ -15,6 +16,7 @@ mongoose.set('useFindAndModify', false);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/assets"));
 
 //PASSPORT CONFIG
 app.use(require("express-session")({
@@ -39,6 +41,8 @@ app.use((req, res, next) => {
     }
     res.redirect("/login");
 }
+
+seed();
 
 app.get("/", (req, res) => {
     Portfolio.find().then(entries => res.render("home", {entries: entries}))
