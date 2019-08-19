@@ -25,11 +25,9 @@
                     <% }) %>
                 </ul>
                 <% if(entry.webLink) { %>
-                <a class="btn btn-success d-inline float-right mx-1" href="<%= entry.webLink %>">Visit Website</a>
-                <% } else { %>
-                    <a class="btn btn-warning d-inline float-right mx-1" href="#">Coming Soon</a>
+                <a class="btn btn-success d-inline float-right mx-1 my-1" href="<%= entry.webLink %>">Visit Website</a>
                 <% } %>
-                <a class="btn btn-info d-inline float-right mx-1" href="<%= entry.gitLink %>">Visit Github</a>
+                <a class="btn btn-info d-inline float-right mx-1 my-1" href="<%= entry.gitLink %>">Visit Github</a>
             </div>
         <hr>
     </div>

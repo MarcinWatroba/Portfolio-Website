@@ -63,19 +63,18 @@ h2 {
     color: white;
 }
 
-#web-info {
-    max-width: 800px;
-}
+
 
 #web-container {
     margin:auto;
     text-align: center;
 }
 
-#web-list {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+.web-list {
+
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
     text-align: left;
 }
 
@@ -97,12 +96,25 @@ hr {
 }
 
 
+@media (min-width: 800px) {
+    #web-info {
+        max-width: 800px;
+    }
+}
+
 
 @media (max-width: 600px) {
 
     .portfolio-entry {
         margin: 1em 0em;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) ,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    }
+    .web-list {
+
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        text-align: left;
     }
 }
   
