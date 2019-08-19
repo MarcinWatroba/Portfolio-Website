@@ -10,7 +10,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
+
 
     font-family: 'Lato', sans-serif;
 }
@@ -105,15 +105,11 @@ hr {
 body {
     background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-color: rgb(240, 240, 240);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
     
     -webkit-background-size: scroll;
     -moz-background-size: scroll;
     -o-background-size: scroll;
     background-size: scroll;
-    height: 100%;
 
     font-family: 'Lato', sans-serif;
 }
