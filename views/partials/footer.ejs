@@ -1,49 +1,36 @@
 
-<hr class=" mt-5">
+    <hr class=" mt-5">
 
-<div class="row py-3 portfolio-entry d-flex justify-content-center">
-    <hr>
-        <div class="col-12" id="web-info">
-        <h4 class="overlay-text">About This Website</h4>
-        <p class="overlay-text">This is a portfolio website created by me (Marcin Watroba) in order to showcase my projects along with my skills in software development.
-            I have designed and built this website myself, using languages and frameworks listed below. 
-        </p>
-        <p class="overlay-text">This is an early version of the website, I will add more projects and features soon.</p>
+    <div class="row py-3 portfolio-entry d-flex justify-content-center">
         <hr>
-        <h5 class="overlay-text">Developed With</h5>
-        <div id="web-container" class="">
-            <ul class="overlay-text web-list">
-                <li>HTML5</li>
-                <li>CSS4</li>
-                <li>Bootstrap4</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>Passport.js</li>
-            </ul>
-        </div>
-            <a class="btn btn-info d-inline float-center mx-1" href="https://github.com/marcin388/portfolio-website">Visit Github</a>
-        </div>
-    <hr>
+            <div class="col-12" id="web-info">
+            <h4 class="overlay-text">About This Website</h4>
+            <p class="overlay-text">This is a portfolio website created by me (Marcin Watroba) in order to showcase my projects along with my skills in software development.
+                I have designed and built this website myself, using languages and frameworks listed below. 
+            </p>
+            <p class="overlay-text">This is an early version of the website, I will add more projects and features soon.</p>
+            <hr>
+            <h5 class="overlay-text">Developed With</h5>
+            <div id="web-container" class="">
+                <ul class="overlay-text web-list">
+                    <li>HTML5</li>
+                    <li>CSS4</li>
+                    <li>Bootstrap4</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>Passport.js</li>
+                </ul>
+            </div>
+                <a class="btn btn-info d-inline float-center mx-1" href="https://github.com/marcin388/portfolio-website">Visit Github</a>
+            </div>
+        <hr>
+    </div>
 </div>
-</div>
-    <script>
-        $(".image-container").on("click", function() {
-            let name = $(this).find("img").attr("src");
-            
-            $("#overlay").show();
-            $(".overlay-image").show();
-            $(".overlay-image").attr('src', name);
-            console.log(name);
-        });
 
-        $("#overlay").on("click", function() {
-            $(".overlay-image").hide();
-            $("#overlay").hide();
-        });
-    </script>
-
+    <script type="text/javascript" src="/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

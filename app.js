@@ -5,7 +5,7 @@ const express    = require("express")
       passport = require("passport"),
       LocalStrategy = require("passport-local"),
       Portfolio  = require("./models/portfolio"),
-      seed     = require("./seed");
+ //     seed     = require("./seed"),
       User     = require("./models/user");
 
 
@@ -42,7 +42,7 @@ app.use((req, res, next) => {
     res.redirect("/login");
 }
 
-seed();
+//seed();
 
 app.get("/", (req, res) => {
     Portfolio.find().then(entries => res.render("home", {entries: entries}))

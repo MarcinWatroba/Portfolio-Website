@@ -23,7 +23,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     z-index: 2;
     cursor: pointer;
   }
@@ -102,7 +102,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    max-width: 80%;
+    max-width: 95%;
     height: auto;
 } 
 
@@ -132,8 +132,6 @@ ul {
 
 }
 
-
-
 hr {
     margin: 0em;
     border: 0;
@@ -147,6 +145,10 @@ hr {
     #web-info {
         max-width: 800px;
     }
+    .overlay-image {
+        max-width: 80%;
+    }
+
 }
 
 
